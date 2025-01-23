@@ -1,18 +1,16 @@
-# The Supermarket Receipt Refactoring Kata 
-### Jean-Marin RIBARIC & Joao DUARTE 
+# Change double numbers
+This pull requests adapts the product unit price.
+<br/>
 
-## Code smells:
+## What's new?
+•⁠  ⁠Switch the prices to "int" which represent the money in cents (1€ = 100c).
 
-- Product Units defined in ProductUnit.java as an enum.
-- Special Offer Types defined in SpecialOfferType.java as an enum.
-- Prices are in double type.
-- handleOffers method in ShoppingCart.java is too long and has too many if statements.
-- Defining certain attributes multiple times, ex: product in Offer.java & ProductQuantity.java
+## Why is it important?
+•⁠ ⁠This eliminates the need for floating-point arithmetic altogether and ensures accurate calculations.
+- Operations that should result in exact values (like multiplying 0.1 by 10) might not produce the expected outcome due to these rounding errors, which could lead to an unexpected outcome due to these rounding errors.
 
-## Changes that should be made:
+## How to Use?
+•⁠  ⁠Change the doubles for integers and int the end of calculationg the final price of the purchase, divide the reached number by 100 to get the price in "€".
 
-- There should be Units Each and Kilo class that inherit from a Product super class, with relevant function overrides.
-- There should be a class for each special offer type that inherit from an Offer super class, with relevant function overrides.
-- Prices should be represented in int type.
-- handleOffers method: creating a "calculateOffer" method for each offer type, calling that method once instead of using if statements.
-- Defining certain attributes multiple times: Possibly creating a singleton with the product data
+<br/>
+<br/>
