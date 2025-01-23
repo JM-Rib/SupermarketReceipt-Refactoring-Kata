@@ -8,7 +8,7 @@
 - Prices are in double type.
 - handleOffers method in ShoppingCart.java is too long and has too many if statements.
 - Defining certain attributes multiple times, ex: product in Offer.java & ProductQuantity.java
-
+   
 ## Changes that should be made:
 
 - There should be Units Each and Kilo class that inherit from a Product super class, with relevant function overrides.
