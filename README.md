@@ -10,7 +10,7 @@
 - Defining certain attributes multiple times, ex: product in Offer.java & ProductQuantity.java
 
 ## Changes that should be made:
-
+     
 - There should be Units Each and Kilo class that inherit from a Product super class, with relevant function overrides.
 - There should be a class for each special offer type that inherit from an Offer super class, with relevant function overrides.
 - Prices should be represented in int type.
